@@ -1,0 +1,7 @@
+.HeroTriceps{
+    background-image: url(../../../public/img/triceps.webp);
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}

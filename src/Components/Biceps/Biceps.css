@@ -1,0 +1,7 @@
+.HeroBiceps{
+    background-image: url(../../../public/img/biceps.jpg);
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}

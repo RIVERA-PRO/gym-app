@@ -1,0 +1,61 @@
+.HeroAbdominales{
+    background-image: url(../../../public/img/abdominales.jpg);
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    transition: all 0.25s;
+}
+
+.card{
+    overflow: hidden;
+    height: 22rem;
+    width: 16rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 1px 1px 2px 1px #1a1e2557;
+    transition: all 0.25s;
+    padding: 10px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+.card-text{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    text-align: left;
+}
+.card p{
+    font-size: 14px;
+}
+.card a{
+    font-size: 14px;
+    text-decoration: none;
+    background-color: var(--verde);
+    padding: 7px 7px;
+    border-radius: 30px;
+  text-align: center;
+    
+}
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.cards-contain{
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  place-content: center;
+  height: 100%;
+  width: 100%;
+  padding: 100px 10%;
+  gap: 3rem;
+background-color: var(--bg-color);
+transition: all 0.25s;
+}

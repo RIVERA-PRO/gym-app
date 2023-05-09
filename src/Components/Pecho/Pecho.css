@@ -1,0 +1,7 @@
+.HeroPecho{
+    background-image: url(../../../public/img/pecho.jpg);
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}

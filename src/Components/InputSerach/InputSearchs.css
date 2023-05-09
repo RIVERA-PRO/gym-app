@@ -1,0 +1,169 @@
+.search-container {
+    position: relative;
+    min-height: 50px;
+    width: 100%;
+  }
+  
+  .modal {
+    position: absolute;
+    top: calc(100% + 1px);
+    left: 0;
+    width: 100%;
+    background-color: var( --gris);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    z-index: 9999;
+    max-height: 30vh;
+    overflow-y:scroll;
+    border-radius: 7px ;
+    transition: all .40s ease;
+}
+ 
+  .modal h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  
+  .modal p {
+    display: block;
+    margin-top: 5px;
+    text-decoration: none;
+    text-align: left;
+    font-size: 13px;
+    padding: 10px 0px;
+    color: var(--blanco)!important;
+  }
+  
+  .inputJobs{
+    background-color: var(  --gris)!important;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 10px;
+    width: 50rem;
+    margin-top: 5px;
+    color: var(--text-color)!important;
+  }
+  .modal a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  align-content: center;
+  gap: 20px;
+  }
+  .modal button{
+    background-color: transparent;
+    border: none;
+  }
+  .btn-music{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+  }
+  .btn-music p:hover{
+    color: var(--verde)!important;
+  }
+  .play-icon-search{
+    border-radius: 100%;
+    font-size: 14px;
+    color: var(--verde);
+}
+ 
+  .modal::-webkit-scrollbar{
+    width: 7px;
+    height: 7px;
+    cursor: pointer;
+ }
+ 
+ .modal::-webkit-scrollbar-thumb{
+     background-color: var(--verde);
+     width: 10px;
+     border-radius:20px ;
+     cursor: pointer;
+ }
+
+ html::-webkit-scrollbar{
+  width: 7px;
+  height: 7px;
+  cursor: pointer;
+}
+
+html::-webkit-scrollbar-thumb{
+   background-color: var(--verde);
+   width: 10px;
+   border-radius:20px ;
+   cursor: pointer;
+}
+
+ @media (max-width: 1024px){
+  .modal p {
+    font-size: 10px;
+  }
+    .inputJobs{
+        background-color: var( --gris)!important;
+        border-radius: 20px;
+        border: none;
+        width: 20rem;
+        color: var(--blanco)!important;
+      }
+ }
+ @media (max-width: 800px){
+    .inputJobs{
+        width: 100%;
+        margin-top: 6px;
+      }
+     
+ }
+
+ @media (max-width: 400px){
+    .modal {
+        left: -35%;
+        width: 180%;
+        padding: 10px;
+        max-height: 40vh;
+    }
+ }
+
+ .footerContain-{
+  margin-left: -24%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 8vh;
+  position: fixed;
+  bottom: 0px; 
+  padding: 0px 6%;
+  background-color:rgba(30, 255, 0, 0.982);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+ }
+
+
+.footerContain- img{
+   width: 50px;
+   border-radius: 10px;
+   height: 55px;
+   object-fit: cover;
+}
+.footerContain- p{
+   font-size: 12px;
+   color: var(--bg-color);
+}
+.img-p{
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   width: 15rem;
+}
+.fondo-input{
+  width: 100%;
+  display: flex;
+}
+@media (max-width: 800px){
+  .footerContain- p{
+    display: none;
+ }
+}

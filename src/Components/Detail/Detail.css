@@ -1,0 +1,48 @@
+
+.detail-contain{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+#img-fondo img{
+    height: 80vh;
+    width: 100%!important;
+    object-fit:cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.ejercicio-img{
+    width: 200px;
+    
+}
+
+.detail-bg{
+    width: 100%;
+    border-radius: 5rem 5rem 0px 0px;
+    background-color: var(--blanco);
+    padding: 20px 13%;
+    margin-top: -5%;
+    -webkit-border-radius: 5rem 5rem 0px 0px;
+    -moz-border-radius: 5rem 5rem 0px 0px;
+    -ms-border-radius: 5rem 5rem 0px 0px;
+    -o-border-radius: 5rem 5rem 0px 0px;
+}
+@media (max-width: 1024px) {
+    #img-fondo img{
+        height: 70vh;
+    }
+    .detail-bg{
+        width: 100%;
+        border-radius: 3rem 3rem 0px 0px;
+        background-color: var(--blanco);
+        padding: 20px 7%;
+        margin-top: -30%;
+        -webkit-border-radius: 3rem 3rem 0px 0px;
+        -moz-border-radius: 3rem 3rem 0px 0px;
+        -ms-border-radius: 3rem 3rem 0px 0px;
+        -o-border-radius: 3rem 3rem 0px 0px;
+}
+}

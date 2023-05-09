@@ -60,13 +60,21 @@ export default function Navbar() {
                         <Anchor to={`/pecho`} >Pecho</Anchor>
                         <Anchor to={`/triceps`} >Triceps</Anchor>
                     </div>
-                    <div>
-                        <a>Desarrollado por Juan Rivera</a>
-                    </div>
+
 
                 </div>
-                <div>
-                    <InputSearch />
+                <div className='input-enlaces'>
+                    <div className='enlaces2'>
+                        <Anchor to={`/`} >Inico</Anchor>
+                        <Anchor to={`/abdominales`} >Abdominales</Anchor>
+                        <Anchor to={`/biceps`} >Biceps</Anchor>
+                        <Anchor to={`/gluteos`} >Gluteos</Anchor>
+                        <Anchor to={`/pecho`} >Pecho</Anchor>
+                        <Anchor to={`/triceps`} >Triceps</Anchor>
+                    </div>
+                    <div>
+                        <InputSearch />
+                    </div>
                 </div>
 
                 <div className={`nav_toggle  ${isOpen && "open"}`} onClick={() => setIsOpen(!isOpen)}>

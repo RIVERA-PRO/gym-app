@@ -39,7 +39,7 @@
     border-radius: 20px;
     border: none;
     padding: 10px 10px;
-    width: 50rem;
+    width: 30rem;
     margin-top: 5px;
     color: var(--text-color)!important;
   }
@@ -49,11 +49,26 @@
     align-items: center;
   align-content: center;
   gap: 20px;
+  padding: 10px 10px;
   }
+  .modal a:hover{
+   background-color: var(--naranja);
+   border-radius: 7px;
+   -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   -ms-border-radius: 7px;
+   -o-border-radius: 7px;
+   transition: 0.5s ease all;
+   -webkit-transition: 0.5s ease all;
+   -moz-transition: 0.5s ease all;
+   -ms-transition: 0.5s ease all;
+   -o-transition: 0.5s ease all;
+}
   .modal button{
     background-color: transparent;
     border: none;
-  }
+  
+}
   .btn-music{
     width: 100%;
     padding: 10px;
@@ -63,12 +78,12 @@
     cursor: pointer;
   }
   .btn-music p:hover{
-    color: var(--verde)!important;
+    color: var(--naranja)!important;
   }
   .play-icon-search{
     border-radius: 100%;
     font-size: 14px;
-    color: var(--verde);
+    color: var(--naranja);
 }
  
   .modal::-webkit-scrollbar{
@@ -78,7 +93,7 @@
  }
  
  .modal::-webkit-scrollbar-thumb{
-     background-color: var(--verde);
+     background-color: var(--naranja);
      width: 10px;
      border-radius:20px ;
      cursor: pointer;
@@ -91,7 +106,7 @@
 }
 
 html::-webkit-scrollbar-thumb{
-   background-color: var(--verde);
+   background-color: var(--naranja);
    width: 10px;
    border-radius:20px ;
    cursor: pointer;
@@ -109,13 +124,28 @@ html::-webkit-scrollbar-thumb{
         color: var(--blanco)!important;
       }
  }
- @media (max-width: 800px){
+ @media (max-width: 900px){
     .inputJobs{
-        width: 100%;
+        width: 30rem!important;
         margin-top: 6px;
       }
      
  }
+
+ @media (max-width: 630px){
+  .inputJobs{
+      width: 25rem!important;
+      margin-top: 6px;
+    }
+   
+}
+@media (max-width: 510px){
+  .inputJobs{
+      width: 100%!important;
+      margin-top: 6px;
+    }
+   
+}
 
  @media (max-width: 400px){
     .modal {
@@ -126,44 +156,4 @@ html::-webkit-scrollbar-thumb{
     }
  }
 
- .footerContain-{
-  margin-left: -24%;
-  z-index: 10;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 8vh;
-  position: fixed;
-  bottom: 0px; 
-  padding: 0px 6%;
-  background-color:rgba(30, 255, 0, 0.982);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
- }
-
-
-.footerContain- img{
-   width: 50px;
-   border-radius: 10px;
-   height: 55px;
-   object-fit: cover;
-}
-.footerContain- p{
-   font-size: 12px;
-   color: var(--bg-color);
-}
-.img-p{
-   display: flex;
-   align-items: center;
-   gap: 10px;
-   width: 15rem;
-}
-.fondo-input{
-  width: 100%;
-  display: flex;
-}
-@media (max-width: 800px){
-  .footerContain- p{
-    display: none;
- }
-}
+ 

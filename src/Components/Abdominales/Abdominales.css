@@ -5,6 +5,15 @@
     background-size: cover;
     background-attachment: fixed;
     transition: all 0.25s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.titulo{
+    font-size: 50px;
+    color: var(--blanco);
+   text-align: center;
+   
 }
 
 .card{
@@ -22,6 +31,7 @@
     -moz-border-radius: 7px;
     -ms-border-radius: 7px;
     -o-border-radius: 7px;
+    background-color: var(--blanco);
 }
 .card-text{
     display: flex;
@@ -36,10 +46,15 @@
 .card a{
     font-size: 14px;
     text-decoration: none;
-    background-color: var(--verde);
+    background-image: linear-gradient(to right,  var(--naranja2) 0%,  var(--naranja) 100%), linear-gradient(to right,  var(--naranja2) 0%,  var(--naranja) 100%);
+    color: var(
+        --blanco
+    );
     padding: 7px 7px;
     border-radius: 30px;
   text-align: center;
+  width: 9rem;
+  
     
 }
 .card img{
@@ -50,12 +65,18 @@
 
 .cards-contain{
     display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
-  place-content: center;
-  height: 100%;
-  width: 100%;
-  padding: 100px 10%;
-  gap: 3rem;
-background-color: var(--bg-color);
-transition: all 0.25s;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    place-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 100px 10%;
+    gap: 3rem;
+    background-color: var(--bg-color);
+    transition: all 0.25s;
+    margin-top: -5rem;
+    border-radius:3rem 3rem 0px 0px;
+    -webkit-border-radius:3rem 3rem 0px 0px;
+    -moz-border-radius:3rem 3rem 0px 0px;
+    -ms-border-radius:3rem 3rem 0px 0px;
+    -o-border-radius:3rem 3rem 0px 0px;
 }

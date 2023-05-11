@@ -1,31 +1,36 @@
 import React from 'react'
 import './CardsX.css'
 import { ejercicios } from '../data'
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSignOutAlt } from '@fortawesome/free-solid-svg-icons'
+import 'swiper/css';
+
 
 export default function CardsX() {
     const ejerciciosAbdominales = ejercicios.filter(ejercicio => ejercicio);
     return (
 
         <div className='contain-scroll'>
-            <div className='cards-contain'>
-                {ejerciciosAbdominales.map((ejercicio) => (
-                    <div key={ejercicio.id} className='cardsX'>
-                        <img src={ejercicio.img} alt={ejercicio.ejercicio} />
-                        <div className='card-text'>
-                            <h5>{ejercicio.ejercicio.substring(0, 20)}...</h5>
-                            <Link to={`/ejercicio/${ejercicio.id}/${ejercicio.ejercicio}`}>
-                                Ver más <FontAwesomeIcon icon={faSignOutAlt} />
-                            </Link>
-                        </div>
-                    </div>
-                ))}
+            <Swiper effect={'coverflow'} grabCursor={true} loop={true} slidesPerView={'auto'} coverflowEffect={{ rotate: 0, stretch: 0, depth: 100, modifier: 2.5, }} pagination={{ el: '.swiper-pagination', clickable: true }} navigation={{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev', clickable: true, }} onSwiper={(swiper) => console.log(swiper)} id="swiper_container"  >
+                <Swiper>
+                    {ejerciciosAbdominales.map((ejercicio) => (
+                        <SwiperSlide id='SwiperSlide'>
+                            <div key={ejercicio.id} className='cardsX'>
 
-            </div>
+                                <Link to={`/ejercicio/${ejercicio.id}/${ejercicio.ejercicio}`}>
+                                    <img src={ejercicio.img} alt={ejercicio.ejercicio} />
+
+                                </Link>
+
+                            </div>
+                        </SwiperSlide>
+                    ))}
+
+                </Swiper>
+            </Swiper>
         </div>
 
 
     )
 }
+

@@ -41,7 +41,7 @@
     padding: 10px 10px;
     width: 30rem;
     margin-top: 5px;
-    color: var(--text-color)!important;
+    color: var(--blanco)!important;
   }
   .modal a{
     text-decoration: none;
@@ -149,10 +149,11 @@ html::-webkit-scrollbar-thumb{
 
  @media (max-width: 400px){
     .modal {
-        left: -35%;
+        left: -54%;
         width: 180%;
         padding: 10px;
         max-height: 40vh;
+        background-color: var(--bg-color);
     }
  }
 

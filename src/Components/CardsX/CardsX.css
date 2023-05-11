@@ -5,8 +5,9 @@
     align-content: center;
     gap: 1rem;
     width: 10rem;
-    background-color: aqua;
- 
+   
+    padding: 20px 0px;
+    position: absolute;
 }
 
 .cardsX img{
@@ -20,25 +21,46 @@
     -o-border-radius: 9px;
 }
 
-.contain-scroll{
-    width: 30rem;
-    max-height: 40vh;
-    overflow-y:scroll;
-    display: flex;
-    margin-top: 30rem;
-    border-radius: 20px;
-   
-}
 
-.contain-scroll::-webkit-scrollbar{
-    width: 7px;
-    height: 7px;
-    cursor: pointer;
+#swiper_container {
+    height: 30vh;
+    width: 80%;
+    transition: all 0.25s;
+   
   }
-  
-  .contain-scroll::-webkit-scrollbar-thumb{
-     background-color: var(--naranja);
-     width: 10px;
-     border-radius:20px ;
-     cursor: pointer;
+  #swiper_container img{
+     width: 8rem;
+     height: 8rem;
+     object-fit: cover;
+     border-radius:100%;
+     transition: all 0.25s;
+}
+#SwiperSlide{
+    width: 11rem !important;
+    display: flex!important;
+    align-items: center!important;
+    justify-content: center!important;
+    align-content: center!important;
+    transition: all 0.25s;
+  }
+  #swiper_container a{
+   text-decoration: none;
+   color: var(--blanco);
+  }
+
+  @media (max-width: 900px) {
+    
+ #swiper_container {
+    height: 30vh;
+    width: 100%;
+ 
+  }
+  #SwiperSlide{
+    width: 8rem !important;
+  }
+
+  #swiper_container img{
+    width: 6rem;
+    height: 6rem;
+}
   }

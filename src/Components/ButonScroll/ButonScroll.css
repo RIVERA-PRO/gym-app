@@ -5,7 +5,8 @@
     border: none;
     border-radius: 50%;
     padding: 10px;
-    background-color: var(--naranja);
+    background-image: linear-gradient(to right,  var(--naranja2) 0%,  var(--naranja) 100%), linear-gradient(to right,  var(--naranja2) 0%,  var(--naranja) 100%);
+
     height: 40px;
     width: 40px;
     display: flex;

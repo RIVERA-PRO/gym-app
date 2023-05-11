@@ -41,7 +41,7 @@ export default function Navbar() {
             <nav className={scrolled ? "navbar scrolled" : "navbar"}>
 
                 <div className='logo'>
-                    <img src="../../../img/logo.png" alt="logo" />
+                    <img src="../../../img/logo2.png" alt="logo" />
                 </div>
 
                 <div className={`nav_items ${isOpen && "open"}`} >
@@ -50,7 +50,7 @@ export default function Navbar() {
                         x
                     </div>
                     <div className='logo-nav'>
-                        <img src="../../../img/logo.png" alt="logo" />
+                        <img src="../../../img/logo2.png" alt="logo" />
                     </div>
                     <div className='enlaces'>
                         <Anchor to={`/`} >Inico</Anchor>
